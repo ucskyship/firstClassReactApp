@@ -1,0 +1,16 @@
+.counter__button {
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 2px;
+}
+
+.input {
+    border-radius: 2px;
+    border-color: pink;
+}
+
+.counter__button:hover {
+    background-color:rgb(95, 45, 45);
+}
