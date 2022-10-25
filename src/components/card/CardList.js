@@ -1,28 +1,20 @@
-import React from 'react'
-import { faker } from "@faker-js/faker"
-import CardDetail from './CardDetail'
-import "./CardList.css"
+import React from "react";
+import CardDetail from "./CardDetail";
+import styles from "./CardList.module.css";
 
-const CardList = () => {
-    return (
-        <div class="card-list">
-            <CardDetail 
-                image = { faker.image.city() } 
-                title = "Hello" 
-                description={faker.lorem.paragraphs()}
-                />
-            <CardDetail
-            title= "Another Card"
-                image = { faker.image.animals() }
-                />
-            <CardDetail 
-                image = { faker.image.food() }
-                description = { faker.lorem.paragraphs()}
-                />
-            <CardDetail 
-                image={ faker.image.fashion() }/>
-        </div>
-    )
-}
+const CardList = ({ data }) => {
+  return (
+    <div className={ `${styles.cardlist} ${styles.cardagain}`}>
+      {data.map((d) => (
+        <CardDetail
+            key={d.id}
+          title={d.title}
+          description={d.description}
+          image={d.image}
+        />
+      ))}
+    </div>
+  );
+};
 
-export default CardList
+export default CardList;

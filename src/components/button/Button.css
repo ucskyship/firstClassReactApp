@@ -1,20 +1,16 @@
-/* .counter__button {
+.btn__button {
     background-color: red;
     color: white;
     font-size: 1.2rem;
     padding: 10px;
-    margin: 2px;
+    margin: 2px auto;
 }
 
 .input {
-    border-radius: 2px;
+    border: none;
     border-color: pink;
 }
 
-.counter__button:hover {
+.btn__button:hover {
     background-color:rgb(95, 45, 45);
-} */
-
-.input {
-    outline: 2px solid pink;
 }

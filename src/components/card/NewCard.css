@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Poppins;
+    background-color: rgb(230, 223, 223);
+    /* color: blanchedalmond; */
+}
+
+.new-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+
+    width: 40%;
+    align-items: center;
+    border: 1px solid brown;
+    padding: 10px;
+    /* box-shadow: 2px 2px 5px; */
+}
+
+.new-card > div {
+    display: flex;
+    justify-content: space-around;
+
+    width: 60%;
+}
+.new-card label {
+    font-size: 27px;
+    margin: 2px;
+    height: 70px;
+
+    width: 60%;
+    background-color: rgba(238, 173, 157, 0.918);
+}
+
+.new-card input {
+    background-color: white;
+    border: none;
+    height: 70px;
+    font-size: 15px;
+    text-align: center;
+}
+
+form {
+    background-color: rgba(238, 173, 157, 0.918);
+}

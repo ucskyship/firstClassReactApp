@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import "./Counter.css"
+import "../button/Button.css"
 
 
 
@@ -32,13 +33,13 @@ const Counter = () => {
     return (
         <div>
             <p>counter: { counter } </p>
-            <button className="counter__button" onClick={ buttonClickHandler }>Increment</button>
-            <button className="counter__button" onClick={ buttonClickHandlerDecrement }>Decrement</button>
+            <button className="btn__button" onClick={ buttonClickHandler }>Increment</button>
+            <button className="btn__button" onClick={ buttonClickHandlerDecrement }>Decrement</button>
 
             <div>
             <input placeholder="enter a number" type="number" min="0" value={input} onChange={ inputChangeHandler }></input>
-            <button className="counter__button" onClick={ incrementByHandler }> IncrementBy</button>
-            <button className="counter__button" onClick={ decrementByHandler }> DecrementBy</button>
+            <button className="btn__button" onClick={ incrementByHandler } > IncrementBy</button>
+            <button className="btn__button" onClick={ decrementByHandler } > DecrementBy</button>
             </div>
         </div>
         

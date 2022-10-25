@@ -5,7 +5,7 @@ import Wrapper from '../../utils/Wrapper'
 const CardDetail = (props) => {
     return (
         <Wrapper>
-            <img className="w-full" src={ props.image } alt={ faker.word.adjective }/>
+            <img className="w-full" src={ props.image } alt={ faker.word.adjective()}/>
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{ props.title }</div>
                 <p className="text-gray-700 text-base">{ props.description }</p>
